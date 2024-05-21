@@ -54,6 +54,7 @@ Partial Class Form1
         Me.L_T1vsT2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -66,6 +67,7 @@ Partial Class Form1
         Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.PB1T1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PB1T2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel2
@@ -76,7 +78,7 @@ Partial Class Form1
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(801, 472)
+        Me.Panel2.Size = New System.Drawing.Size(1104, 249)
         Me.Panel2.TabIndex = 1
         '
         'Panel4
@@ -87,7 +89,7 @@ Partial Class Form1
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 36)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(801, 436)
+        Me.Panel4.Size = New System.Drawing.Size(1104, 213)
         Me.Panel4.TabIndex = 2
         '
         'Panel6
@@ -99,14 +101,14 @@ Partial Class Form1
         Me.Panel6.Location = New System.Drawing.Point(0, 110)
         Me.Panel6.MinimumSize = New System.Drawing.Size(0, 80)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(801, 93)
+        Me.Panel6.Size = New System.Drawing.Size(1104, 93)
         Me.Panel6.TabIndex = 11
         '
         'ButtonEnregistrez
         '
         Me.ButtonEnregistrez.Dock = System.Windows.Forms.DockStyle.Right
         Me.ButtonEnregistrez.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.ButtonEnregistrez.Location = New System.Drawing.Point(726, 0)
+        Me.ButtonEnregistrez.Location = New System.Drawing.Point(1029, 0)
         Me.ButtonEnregistrez.Name = "ButtonEnregistrez"
         Me.ButtonEnregistrez.Size = New System.Drawing.Size(75, 93)
         Me.ButtonEnregistrez.TabIndex = 9
@@ -121,7 +123,7 @@ Partial Class Form1
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(801, 93)
+        Me.Panel7.Size = New System.Drawing.Size(1104, 93)
         Me.Panel7.TabIndex = 8
         '
         'TableLayoutPanel3
@@ -147,7 +149,7 @@ Partial Class Form1
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle())
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(801, 64)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1104, 64)
         Me.TableLayoutPanel3.TabIndex = 7
         '
         'TextBoxT2
@@ -161,7 +163,7 @@ Partial Class Form1
         '
         'TextBoxT1
         '
-        Me.TextBoxT1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBoxT1.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBoxT1.Location = New System.Drawing.Point(111, 3)
         Me.TextBoxT1.MinimumSize = New System.Drawing.Size(35, 4)
         Me.TextBoxT1.Name = "TextBoxT1"
@@ -220,6 +222,7 @@ Partial Class Form1
         Me.PB2T1.MinimumSize = New System.Drawing.Size(26, 26)
         Me.PB2T1.Name = "PB2T1"
         Me.PB2T1.Size = New System.Drawing.Size(26, 26)
+        Me.PB2T1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB2T1.TabIndex = 2
         Me.PB2T1.TabStop = False
         '
@@ -231,6 +234,7 @@ Partial Class Form1
         Me.PB2T2.MinimumSize = New System.Drawing.Size(26, 26)
         Me.PB2T2.Name = "PB2T2"
         Me.PB2T2.Size = New System.Drawing.Size(26, 26)
+        Me.PB2T2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB2T2.TabIndex = 3
         Me.PB2T2.TabStop = False
         '
@@ -253,7 +257,7 @@ Partial Class Form1
         Me.Label20.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.Label20.Location = New System.Drawing.Point(0, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(801, 29)
+        Me.Label20.Size = New System.Drawing.Size(1104, 29)
         Me.Label20.TabIndex = 3
         Me.Label20.Text = "Score de la manche no "
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -267,13 +271,13 @@ Partial Class Form1
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.MinimumSize = New System.Drawing.Size(0, 110)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(801, 110)
+        Me.Panel1.Size = New System.Drawing.Size(1104, 110)
         Me.Panel1.TabIndex = 10
         '
         'Button1
         '
         Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.Location = New System.Drawing.Point(726, 0)
+        Me.Button1.Location = New System.Drawing.Point(1029, 0)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 110)
         Me.Button1.TabIndex = 9
@@ -287,7 +291,7 @@ Partial Class Form1
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(801, 110)
+        Me.Panel5.Size = New System.Drawing.Size(1104, 110)
         Me.Panel5.TabIndex = 8
         '
         'TableLayoutPanel2
@@ -297,7 +301,7 @@ Partial Class Form1
         Me.TableLayoutPanel2.ColumnCount = 4
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 700.0!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
         Me.TableLayoutPanel2.Controls.Add(Me.Label13, 3, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBoxTTT, 2, 2)
@@ -316,7 +320,7 @@ Partial Class Form1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(801, 84)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1104, 84)
         Me.TableLayoutPanel2.TabIndex = 7
         '
         'Label13
@@ -325,7 +329,7 @@ Partial Class Form1
         Me.Label13.Dock = System.Windows.Forms.DockStyle.Left
         Me.Label13.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label13.Location = New System.Drawing.Point(456, 56)
+        Me.Label13.Location = New System.Drawing.Point(802, 56)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(43, 28)
         Me.Label13.TabIndex = 10
@@ -338,8 +342,10 @@ Partial Class Form1
         Me.TextBoxTTT.Location = New System.Drawing.Point(102, 59)
         Me.TextBoxTTT.Name = "TextBoxTTT"
         Me.TextBoxTTT.ReadOnly = True
-        Me.TextBoxTTT.Size = New System.Drawing.Size(348, 22)
+        Me.TextBoxTTT.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBoxTTT.Size = New System.Drawing.Size(694, 22)
         Me.TextBoxTTT.TabIndex = 9
+        Me.TextBoxTTT.TabStop = False
         '
         'TextBoxTT2
         '
@@ -347,8 +353,10 @@ Partial Class Form1
         Me.TextBoxTT2.Location = New System.Drawing.Point(102, 31)
         Me.TextBoxTT2.Name = "TextBoxTT2"
         Me.TextBoxTT2.ReadOnly = True
-        Me.TextBoxTT2.Size = New System.Drawing.Size(348, 22)
+        Me.TextBoxTT2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBoxTT2.Size = New System.Drawing.Size(694, 22)
         Me.TextBoxTT2.TabIndex = 6
+        Me.TextBoxTT2.TabStop = False
         '
         'TextBoxTT1
         '
@@ -356,8 +364,10 @@ Partial Class Form1
         Me.TextBoxTT1.Location = New System.Drawing.Point(102, 3)
         Me.TextBoxTT1.Name = "TextBoxTT1"
         Me.TextBoxTT1.ReadOnly = True
-        Me.TextBoxTT1.Size = New System.Drawing.Size(348, 22)
+        Me.TextBoxTT1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBoxTT1.Size = New System.Drawing.Size(694, 22)
         Me.TextBoxTT1.TabIndex = 4
+        Me.TextBoxTT1.TabStop = False
         '
         'LTT1
         '
@@ -365,11 +375,11 @@ Partial Class Form1
         Me.LTT1.Dock = System.Windows.Forms.DockStyle.Left
         Me.LTT1.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LTT1.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.LTT1.Location = New System.Drawing.Point(456, 0)
+        Me.LTT1.Location = New System.Drawing.Point(802, 0)
         Me.LTT1.Name = "LTT1"
-        Me.LTT1.Size = New System.Drawing.Size(56, 28)
+        Me.LTT1.Size = New System.Drawing.Size(18, 28)
         Me.LTT1.TabIndex = 4
-        Me.LTT1.Text = "Label3"
+        Me.LTT1.Text = "0"
         Me.LTT1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'L2T1
@@ -408,6 +418,7 @@ Partial Class Form1
         Me.PB1T1.MinimumSize = New System.Drawing.Size(26, 26)
         Me.PB1T1.Name = "PB1T1"
         Me.PB1T1.Size = New System.Drawing.Size(26, 26)
+        Me.PB1T1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB1T1.TabIndex = 2
         Me.PB1T1.TabStop = False
         '
@@ -417,6 +428,7 @@ Partial Class Form1
         Me.PB1T2.Location = New System.Drawing.Point(70, 31)
         Me.PB1T2.Name = "PB1T2"
         Me.PB1T2.Size = New System.Drawing.Size(26, 22)
+        Me.PB1T2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PB1T2.TabIndex = 3
         Me.PB1T2.TabStop = False
         '
@@ -426,11 +438,11 @@ Partial Class Form1
         Me.LTT2.Dock = System.Windows.Forms.DockStyle.Left
         Me.LTT2.Font = New System.Drawing.Font("Times New Roman", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LTT2.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.LTT2.Location = New System.Drawing.Point(456, 28)
+        Me.LTT2.Location = New System.Drawing.Point(802, 28)
         Me.LTT2.Name = "LTT2"
-        Me.LTT2.Size = New System.Drawing.Size(56, 28)
+        Me.LTT2.Size = New System.Drawing.Size(18, 28)
         Me.LTT2.TabIndex = 5
-        Me.LTT2.Text = "Label7"
+        Me.LTT2.Text = "0"
         Me.LTT2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'L_T1vsT2
@@ -441,7 +453,7 @@ Partial Class Form1
         Me.L_T1vsT2.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.L_T1vsT2.Location = New System.Drawing.Point(0, 0)
         Me.L_T1vsT2.Name = "L_T1vsT2"
-        Me.L_T1vsT2.Size = New System.Drawing.Size(801, 26)
+        Me.L_T1vsT2.Size = New System.Drawing.Size(1104, 26)
         Me.L_T1vsT2.TabIndex = 3
         Me.L_T1vsT2.Text = " VS "
         Me.L_T1vsT2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -452,7 +464,7 @@ Partial Class Form1
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 36)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(801, 0)
+        Me.Panel3.Size = New System.Drawing.Size(1104, 0)
         Me.Panel3.TabIndex = 1
         '
         'Label1
@@ -465,17 +477,22 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(801, 36)
+        Me.Label1.Size = New System.Drawing.Size(1104, 36)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Baseball - Tableau des scores"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'FileSystemWatcher1
+        '
+        Me.FileSystemWatcher1.EnableRaisingEvents = True
+        Me.FileSystemWatcher1.SynchronizingObject = Me
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(801, 472)
+        Me.ClientSize = New System.Drawing.Size(1104, 249)
         Me.Controls.Add(Me.Panel2)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -498,6 +515,7 @@ Partial Class Form1
         Me.TableLayoutPanel2.PerformLayout()
         CType(Me.PB1T1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PB1T2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -525,7 +543,6 @@ Partial Class Form1
     Friend WithEvents Panel7 As Panel
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents TextBoxT2 As TextBox
-    Friend WithEvents TextBoxT1 As TextBox
     Friend WithEvents L3T1 As Label
     Friend WithEvents L3T2 As Label
     Friend WithEvents PB2T1 As PictureBox
@@ -533,4 +550,6 @@ Partial Class Form1
     Friend WithEvents Label20 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label19 As Label
+    Friend WithEvents TextBoxT1 As TextBox
+    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
 End Class

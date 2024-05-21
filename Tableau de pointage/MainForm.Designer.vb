@@ -73,7 +73,7 @@ Partial Class MainForm
         Me.panel1.Location = New System.Drawing.Point(0, 28)
         Me.panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(625, 180)
+        Me.panel1.Size = New System.Drawing.Size(625, 203)
         Me.panel1.TabIndex = 2
         '
         'm_splitContainer1
@@ -95,7 +95,7 @@ Partial Class MainForm
         Me.m_splitContainer1.Panel2.Controls.Add(Me.pictureBox2)
         Me.m_splitContainer1.Panel2.Controls.Add(Me.Team2SelectCB)
         Me.m_splitContainer1.Panel2.Controls.Add(Me.Team2)
-        Me.m_splitContainer1.Size = New System.Drawing.Size(625, 180)
+        Me.m_splitContainer1.Size = New System.Drawing.Size(625, 203)
         Me.m_splitContainer1.SplitterDistance = 313
         Me.m_splitContainer1.SplitterWidth = 5
         Me.m_splitContainer1.TabIndex = 0
@@ -103,7 +103,7 @@ Partial Class MainForm
         'ImgTeam1
         '
         Me.ImgTeam1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.ImgTeam1.Location = New System.Drawing.Point(0, 84)
+        Me.ImgTeam1.Location = New System.Drawing.Point(0, 107)
         Me.ImgTeam1.Margin = New System.Windows.Forms.Padding(4)
         Me.ImgTeam1.Name = "ImgTeam1"
         Me.ImgTeam1.Size = New System.Drawing.Size(313, 86)
@@ -113,7 +113,7 @@ Partial Class MainForm
         'pictureBox1
         '
         Me.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pictureBox1.Location = New System.Drawing.Point(0, 170)
+        Me.pictureBox1.Location = New System.Drawing.Point(0, 193)
         Me.pictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.pictureBox1.Name = "pictureBox1"
         Me.pictureBox1.Size = New System.Drawing.Size(313, 10)
@@ -143,7 +143,7 @@ Partial Class MainForm
         'pictureBox2
         '
         Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.pictureBox2.Location = New System.Drawing.Point(0, 84)
+        Me.pictureBox2.Location = New System.Drawing.Point(0, 107)
         Me.pictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.pictureBox2.Name = "pictureBox2"
         Me.pictureBox2.Size = New System.Drawing.Size(307, 96)
@@ -173,7 +173,7 @@ Partial Class MainForm
         'button1
         '
         Me.button1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.button1.Location = New System.Drawing.Point(0, 180)
+        Me.button1.Location = New System.Drawing.Point(0, 203)
         Me.button1.Margin = New System.Windows.Forms.Padding(4)
         Me.button1.Name = "button1"
         Me.button1.Size = New System.Drawing.Size(625, 28)
@@ -185,7 +185,8 @@ Partial Class MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(625, 208)
+        Me.BackColor = System.Drawing.Color.DimGray
+        Me.ClientSize = New System.Drawing.Size(625, 231)
         Me.Controls.Add(Me.button1)
         Me.Controls.Add(Me.panel1)
         Me.Controls.Add(Me.label1)
